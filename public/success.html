@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago Exitoso - VÉLOURS Studio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    .success-container {
+      max-width: 650px;
+      margin: 120px auto 6rem;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .success-icon {
+      font-size: 5rem;
+      color: #00e676;
+      background: rgba(0, 230, 118, 0.1);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      box-shadow: 0 0 30px rgba(0, 230, 118, 0.3);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 30px rgba(0, 230, 118, 0.3); }
+      50% { transform: scale(1.05); box-shadow: 0 0 45px rgba(0, 230, 118, 0.5); }
+      100% { transform: scale(1); box-shadow: 0 0 30px rgba(0, 230, 118, 0.3); }
+    }
+    .success-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .success-subtitle {
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+    .receipt-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      text-align: left;
+      margin-bottom: 2rem;
+      box-shadow: var(--glass-shadow);
+    }
+    .receipt-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.8rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .receipt-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+      font-size: 0.95rem;
+    }
+    .receipt-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .receipt-label {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .receipt-val {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .receipt-val.highlight {
+      color: #00e676;
+    }
+    .debug-section {
+      text-align: left;
+      margin-top: 3rem;
+    }
+    .debug-toggle {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 0.8rem 1.2rem;
+      border-radius: var(--radius-sm);
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition);
+    }
+    .debug-toggle:hover {
+      color: var(--text-primary);
+      border-color: var(--accent);
+    }
+    .debug-content {
+      display: none;
+      background: #06070a;
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+      padding: 1.5rem;
+      overflow-x: auto;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #00e676;
+      max-height: 350px;
+    }
+    .debug-content.active {
+      display: block;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: var(--accent-gradient);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(243, 85, 34, 0.3);
+      transition: var(--transition);
+      margin-top: 2rem;
+    }
+    .back-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(243, 85, 34, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header>
+    <div class="nav-container">
+      <a href="/" class="logo">
+        VÉLOURS <span>STUDIO</span>
+      </a>
+      <span style="font-size: 0.85rem; background: rgba(0, 230, 118, 0.1); border: 1px solid rgba(0, 230, 118, 0.3); color: #00e676; padding: 0.4rem 1rem; border-radius: 30px; font-weight: 600;">
+        Conexión Segura
+      </span>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="success-container">
+    <div class="success-icon">
+      <i class="bx bx-check bx-md"></i>
+    </div>
+    
+    <h1 class="success-title">¡Pago Confirmado!</h1>
+    <p class="success-subtitle">Tu transacción ha sido procesada de manera exitosa a través de PayPhone.</p>
+
+    <!-- Comprobante de Pago -->
+    <div class="receipt-card">
+      <div class="receipt-title">
+        Detalle de Transacción <i class="bx bx-receipt text-secondary"></i>
+      </div>
+      
+      <div class="receipt-row">
+        <span class="receipt-label">Cliente</span>
+        <span class="receipt-val" id="receipt-buyer-name">Cargando...</span>
+      </div>
+      <div class="receipt-row">
+        <span class="receipt-label">Identificación</span>
+        <span class="receipt-val" id="receipt-buyer-doc">Cargando...</span>
+      </div>
+      <div class="receipt-row">
+        <span class="receipt-label">Código de Pedido (clientTxId)</span>
+        <span class="receipt-val" id="receipt-order-id">Cargando...</span>
+      </div>
+      <div class="receipt-row">
+        <span class="receipt-label">ID Transacción PayPhone</span>
+        <span class="receipt-val highlight" id="receipt-payphone-id">Cargando...</span>
+      </div>
+      <div class="receipt-row">
+        <span class="receipt-label">Tarjeta / Medio de Pago</span>
+        <span class="receipt-val" id="receipt-card">Cargando...</span>
+      </div>
+      <div class="receipt-row" style="border-top: 1px solid var(--border); margin-top: 1rem; padding-top: 1.2rem;">
+        <span class="receipt-label" style="font-size: 1.1rem; color: var(--text-primary);">Total Pagado (USD)</span>
+        <span class="receipt-val" style="font-size: 1.3rem; color: #00e676;" id="receipt-total">$0.00</span>
+      </div>
+    </div>
+
+    <!-- Sección Debugger para el Alumno/Profesor (Response de la API) -->
+    <div class="debug-section">
+      <button class="debug-toggle" id="debug-toggle-btn">
+        <span><i class="bx bx-code-alt"></i> Ver Response de la API de PayPhone</span>
+        <i class="bx bx-chevron-down" id="debug-arrow"></i>
+      </button>
+      <pre class="debug-content" id="debug-content-box">
+{
+  "cargando": "Obteniendo respuesta de confirmación..."
+}
+      </pre>
+    </div>
+
+
+
+    <!-- Volver -->
+    <div style="margin-top: 2rem;">
+      <a href="/" class="back-btn">
+        <i class="bx bx-shopping-bag"></i> Seguir Comprando
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <span>VÉLOURS Studio</span>. Todos los derechos reservados.</p>
+    <p>Desarrollado para la integración oficial de pasarelas de pago con PayPhone.</p>
+  </footer>
+
+  <script>
+    // Obtener los parámetros de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    // Capturar el ID de transacción y admitir ambas variaciones del parámetro de identificación (clientTransactionId y clientTxId)
+    const transactionId = urlParams.get('id');
+    const clientTxId = urlParams.get('clientTransactionId') || urlParams.get('clientTxId');
+
+    const debugToggle = document.getElementById('debug-toggle-btn');
+    const debugContent = document.getElementById('debug-content-box');
+    const debugArrow = document.getElementById('debug-arrow');
+
+    debugToggle.addEventListener('click', () => {
+      debugContent.classList.toggle('active');
+      if (debugContent.classList.contains('active')) {
+        debugArrow.className = 'bx bx-chevron-up';
+      } else {
+        debugArrow.className = 'bx bx-chevron-down';
+      }
+    });
+
+    async function loadReceipt() {
+      if (!transactionId || !clientTxId) {
+        document.querySelector('.success-container').innerHTML = `
+          <div class="success-icon" style="color: #ff4a4a; background: rgba(255, 74, 74, 0.1); box-shadow: 0 0 30px rgba(255, 74, 74, 0.3);">
+            <i class="bx bx-x bx-md"></i>
+          </div>
+          <h1 class="success-title">Error en Transacción</h1>
+          <p class="success-subtitle">No se han recibido los parámetros de transacción válidos (transactionId o clientTxId).</p>
+          <a href="/" class="back-btn"><i class="bx bx-arrow-back"></i> Volver al Catálogo</a>
+        `;
+        return;
+      }
+
+      try {
+        // Enviar la confirmación al backend
+        const confirmRes = await fetch('/api/orders/confirm', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            transactionId: transactionId,
+            clientTxId: clientTxId
+          })
+        });
+
+        const responseData = await confirmRes.json();
+
+        if (confirmRes.ok && responseData.success) {
+          const order = responseData.data.order;
+          const payphoneRes = order.payphoneResponse;
+
+          // Renderizar datos en el comprobante
+          document.getElementById('receipt-buyer-name').textContent = order.buyer.name;
+          document.getElementById('receipt-buyer-doc').textContent = order.buyer.documentId;
+          document.getElementById('receipt-order-id').textContent = order.id;
+          document.getElementById('receipt-payphone-id').textContent = order.payphoneTransactionId;
+          
+          // Obtener marca de tarjeta o mensaje
+          const cardType = payphoneRes.cardBrand || payphoneRes.brand || 'Saldo PayPhone';
+          const cardNum = payphoneRes.cardNumber || '';
+          document.getElementById('receipt-card').textContent = `${cardType} ${cardNum}`;
+          
+          if (order.status === 'Refunded') {
+            document.getElementById('receipt-payphone-id').style.color = '#ff4a4a';
+            document.getElementById('receipt-payphone-id').textContent = `${order.payphoneTransactionId} (ANULADO)`;
+            document.getElementById('receipt-total').style.color = '#ff4a4a';
+            document.getElementById('receipt-total').textContent = `$${order.total.toFixed(2)} (REEMBOLSADO)`;
+          } else {
+            document.getElementById('receipt-total').textContent = `$${order.total.toFixed(2)}`;
+          }
+
+          // Guardar response de la API en el cuadro debugger
+          debugContent.textContent = JSON.stringify(payphoneRes, null, 2);
+
+          // Limpiar el carrito local tras la compra exitosa
+          localStorage.removeItem('velours_cart');
+        } else {
+          // Mostrar detalles del fallo
+          const errorMessage = responseData.error?.message || responseData.message || 'La pasarela no pudo autorizar el pago.';
+          document.querySelector('.success-container').innerHTML = `
+            <div class="success-icon" style="color: #ff4a4a; background: rgba(255, 74, 74, 0.1); box-shadow: 0 0 30px rgba(255, 74, 74, 0.3);">
+              <i class="bx bx-x bx-md"></i>
+            </div>
+            <h1 class="success-title">Pago No Verificado</h1>
+            <p class="success-subtitle">${errorMessage}</p>
+            
+            <div class="receipt-card" style="margin-top:2rem;">
+              <div class="receipt-title">Detalles del Error</div>
+              <div class="receipt-row">
+                <span class="receipt-label">Código de Pedido</span>
+                <span class="receipt-val">${clientTxId}</span>
+              </div>
+              <div class="receipt-row">
+                <span class="receipt-label">ID Transacción</span>
+                <span class="receipt-val" style="color:#ff4a4a;">${transactionId}</span>
+              </div>
+            </div>
+
+            <div class="debug-section">
+              <button class="debug-toggle" id="debug-toggle-btn-error">
+                <span><i class="bx bx-code-alt"></i> Ver Detalle de Respuesta (Error)</span>
+              </button>
+              <pre class="debug-content active" style="color:#ff4a4a;">${JSON.stringify(responseData, null, 2)}</pre>
+            </div>
+
+            <a href="/" class="back-btn"><i class="bx bx-arrow-back"></i> Volver al Catálogo</a>
+          `;
+        }
+      } catch (err) {
+        console.error(err);
+        document.getElementById('receipt-buyer-name').textContent = "Error de Red";
+        debugContent.textContent = JSON.stringify({ error: err.message }, null, 2);
+      }
+    }
+
+    window.onload = loadReceipt;
+  </script>
+</body>
+</html>

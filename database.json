@@ -1,0 +1,2087 @@
+{
+  "products": [
+    {
+      "id": "prod-bomber",
+      "name": "Chaqueta Bomber Vélours",
+      "price": 45,
+      "description": "Chaqueta bomber de corte moderno con forro térmico satinado y detalles metálicos premium. Ideal para climas templados.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image": "/images/bomber.jpg",
+      "category": "Chaquetas"
+    },
+    {
+      "id": "prod-hoodie",
+      "name": "Hoodie Minimalista Algodón",
+      "price": 35,
+      "description": "Saco con capucha de felpa de algodón de gramaje pesado (400 GSM). Acabado ultrasuave por dentro y ajuste oversized relajado.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image": "/images/hoodie.jpg",
+      "category": "Sacos"
+    },
+    {
+      "id": "prod-pants",
+      "name": "Pantalón Chino Slim Fit",
+      "price": 30,
+      "description": "Pantalón casual tipo chino, tejido elástico y cómodo. Ideal tanto para oficina como para un estilo urbano y relajado.",
+      "sizes": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "image": "/images/pants.jpg",
+      "category": "Pantalones"
+    },
+    {
+      "id": "prod-tshirt",
+      "name": "Camiseta Gráfica Éthique",
+      "price": 20,
+      "description": "Camiseta de algodón orgánico 100% con estampa tipográfica minimalista en el pecho. Cuello acanalado y costuras reforzadas.",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image": "/images/tshirt.jpg",
+      "category": "Camisetas"
+    },
+    {
+      "id": "prod-denim",
+      "name": "Chaqueta Denim Vintage",
+      "price": 50,
+      "description": "Chaqueta de mezclilla gruesa con lavado retro. Botonadura de latón grabada y costuras en contraste de color tabaco.",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image": "/images/denim.jpg",
+      "category": "Chaquetas"
+    },
+    {
+      "id": "prod-sneakers",
+      "name": "Zapatillas Minimalistas Blancas",
+      "price": 60,
+      "description": "Zapatillas de cuero sintético premium de suela vulcanizada. Diseño limpio y atemporal que combina con cualquier outfit.",
+      "sizes": [
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "image": "/images/sneakers.jpg",
+      "category": "Calzado"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-1782101716118-173",
+      "clientTxId": "order-1782101716118-173",
+      "buyer": {
+        "name": "Vanessa",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "1350654915",
+        "phoneNumber": "0969444323"
+      },
+      "items": [
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        }
+      ],
+      "subtotal": 30,
+      "tax": 4.5,
+      "shipping": 5,
+      "total": 39.5,
+      "status": "Paid",
+      "payphoneTransactionId": "681479",
+      "payphoneResponse": {
+        "transactionId": 681479,
+        "status": "Approved",
+        "clientTxId": "order-1782101716118-173",
+        "amount": 3950,
+        "currency": "USD",
+        "message": "Aprobado (Simulación)",
+        "cardBrand": "VISA Test",
+        "cardNumber": "XXXXXXXXXXXX1111"
+      },
+      "createdAt": "2026-06-22T04:15:16.118Z"
+    },
+    {
+      "id": "order-1782102129126-888",
+      "clientTxId": "order-1782102129126-888",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Dirección Principal"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:22:09.126Z"
+    },
+    {
+      "id": "order-1782102130721-629",
+      "clientTxId": "order-1782102130721-629",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Dirección Principal"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:22:10.721Z"
+    },
+    {
+      "id": "order-1782102131434-839",
+      "clientTxId": "order-1782102131434-839",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Dirección Principal"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:22:11.434Z"
+    },
+    {
+      "id": "order-1782102132030-378",
+      "clientTxId": "order-1782102132030-378",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Dirección Principal"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:22:12.030Z"
+    },
+    {
+      "id": "order-1782102140832-52",
+      "clientTxId": "order-1782102140832-52",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Dirección Principal"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:22:20.832Z"
+    },
+    {
+      "id": "order-1782102486061-970",
+      "clientTxId": "order-1782102486061-970",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:28:06.061Z"
+    },
+    {
+      "id": "order-1782102573181-117",
+      "clientTxId": "order-1782102573181-117",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:29:33.181Z"
+    },
+    {
+      "id": "order-1782102588708-484",
+      "clientTxId": "order-1782102588708-484",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:29:48.708Z"
+    },
+    {
+      "id": "order-1782102663847-336",
+      "clientTxId": "order-1782102663847-336",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:31:03.847Z"
+    },
+    {
+      "id": "order-1782102670231-748",
+      "clientTxId": "order-1782102670231-748",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:31:10.231Z"
+    },
+    {
+      "id": "order-1782102680631-387",
+      "clientTxId": "order-1782102680631-387",
+      "buyer": {
+        "name": "Juan Perez",
+        "email": "juan.perez@example.com",
+        "documentId": "1712345678",
+        "phoneNumber": "0999999999",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Av. Shyris N34-12"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        }
+      ],
+      "subtotal": 45,
+      "tax": 6.75,
+      "shipping": 5,
+      "total": 56.75,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:31:20.631Z"
+    },
+    {
+      "id": "order-1782102692902-495",
+      "clientTxId": "order-1782102692902-495",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:31:32.902Z"
+    },
+    {
+      "id": "order-1782102732939-527",
+      "clientTxId": "order-1782102732939-527",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:32:12.939Z"
+    },
+    {
+      "id": "order-1782102745740-736",
+      "clientTxId": "order-1782102745740-736",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:32:25.740Z"
+    },
+    {
+      "id": "order-1782102768828-610",
+      "clientTxId": "order-1782102768828-610",
+      "buyer": {
+        "name": "Juan Perez",
+        "email": "juan.perez@example.com",
+        "documentId": "1712345678",
+        "phoneNumber": "0999999999",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Av. Shyris N34-12"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        }
+      ],
+      "subtotal": 45,
+      "tax": 6.75,
+      "shipping": 5,
+      "total": 56.75,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:32:48.828Z"
+    },
+    {
+      "id": "order-1782102812141-154",
+      "clientTxId": "order-1782102812141-154",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:33:32.141Z"
+    },
+    {
+      "id": "order-1782102814697-380",
+      "clientTxId": "order-1782102814697-380",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:33:34.697Z"
+    },
+    {
+      "id": "order-1782102834257-846",
+      "clientTxId": "order-1782102834257-846",
+      "buyer": {
+        "name": "Juan Perez",
+        "email": "juan.perez@example.com",
+        "documentId": "1712345678",
+        "phoneNumber": "0999999999",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Av. Shyris N34-12"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        }
+      ],
+      "subtotal": 45,
+      "tax": 6.75,
+      "shipping": 5,
+      "total": 56.75,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:33:54.257Z"
+    },
+    {
+      "id": "tx0287489492",
+      "clientTxId": "tx0287489492",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "0969444323",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:34:34.894Z"
+    },
+    {
+      "id": "tx0288468420",
+      "clientTxId": "tx0288468420",
+      "buyer": {
+        "name": "Juan Perez",
+        "email": "juan.perez@example.com",
+        "documentId": "1712345678",
+        "phoneNumber": "0999999999",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Av. Shyris N34-12"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        }
+      ],
+      "subtotal": 45,
+      "tax": 6.75,
+      "shipping": 5,
+      "total": 56.75,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:34:44.684Z"
+    },
+    {
+      "id": "tx0289685235",
+      "clientTxId": "tx0289685235",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:34:56.852Z"
+    },
+    {
+      "id": "tx0290265121",
+      "clientTxId": "tx0290265121",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:35:02.651Z"
+    },
+    {
+      "id": "tx0300346317",
+      "clientTxId": "tx0300346317",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:36:43.463Z"
+    },
+    {
+      "id": "tx0309050933",
+      "clientTxId": "tx0309050933",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:38:10.509Z"
+    },
+    {
+      "id": "tx0310431316",
+      "clientTxId": "tx0310431316",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-22T04:38:24.313Z"
+    },
+    {
+      "id": "tx0331850657",
+      "clientTxId": "tx0331850657",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomez@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        },
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-denim",
+          "name": "Chaqueta Denim Vintage",
+          "price": 50,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 50
+        }
+      ],
+      "subtotal": 115,
+      "tax": 17.25,
+      "shipping": 0,
+      "total": 132.25,
+      "status": "Paid",
+      "payphoneTransactionId": "87656311",
+      "payphoneResponse": {
+        "email": "vanesagomez@gmail.com",
+        "cardType": "Credit",
+        "bin": "411111",
+        "lastDigits": "1111",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": "50",
+        "cardBrand": "Visa JP Morgan Chase Bank (US)",
+        "amount": 13225,
+        "clientTransactionId": "tx0331850657",
+        "phoneNumber": "593969444323",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87656311",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87656311,
+        "document": "1350754915",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "593969444323",
+        "optionalParameter2": "vanesagomez@gmail.com",
+        "optionalParameter3": "+593969444323-vanesagomez@gmail.com-",
+        "optionalParameter4": "VANESSA GOMEZ",
+        "storeName": "Gloria Santana",
+        "date": "2026-06-21T23:43:46.24",
+        "regionIso": "EC",
+        "transactionType": "Classic",
+        "recap": null,
+        "reference": "Pago de pedido tx0331850657 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-22T04:41:58.506Z"
+    },
+    {
+      "id": "tx0348715626",
+      "clientTxId": "tx0348715626",
+      "buyer": {
+        "name": "Vanessa Palma",
+        "email": "vane@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "HOLA"
+      },
+      "items": [
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        },
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 65,
+      "tax": 9.75,
+      "shipping": 0,
+      "total": 74.75,
+      "status": "Paid",
+      "payphoneTransactionId": "87656345",
+      "payphoneResponse": {
+        "email": "vane@gmail.com",
+        "cardType": "Credit",
+        "bin": "424242",
+        "lastDigits": "4242",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": "50",
+        "cardBrand": "Visa BANCO LAFISE PANAMA, S.A.",
+        "amount": 7475,
+        "clientTransactionId": "tx0348715626",
+        "phoneNumber": "593969444323",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87656345",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87656345,
+        "document": "1350754915",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "593969444323",
+        "optionalParameter2": "vane@gmail.com",
+        "optionalParameter3": "+593969444323-vane@gmail.com-",
+        "optionalParameter4": "VANESSA GOMEZ",
+        "storeName": "Gloria Santana",
+        "date": "2026-06-21T23:46:47.6",
+        "regionIso": "EC",
+        "transactionType": "Classic",
+        "recap": null,
+        "reference": "Pago de pedido tx0348715626 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-22T04:44:47.156Z"
+    },
+    {
+      "id": "tx0387799034",
+      "clientTxId": "tx0387799034",
+      "buyer": {
+        "name": "Vanessa Gomez",
+        "email": "vanesagomezpalma@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 35,
+      "tax": 5.25,
+      "shipping": 5,
+      "total": 45.25,
+      "status": "Failed",
+      "payphoneTransactionId": "87656404",
+      "payphoneResponse": {
+        "email": "vanesagomezpalma@gmail.com",
+        "cardType": "Credit",
+        "bin": "424242",
+        "lastDigits": "4242",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": "50",
+        "cardBrand": "Visa BANCO LAFISE PANAMA, S.A.",
+        "amount": 4525,
+        "clientTransactionId": "tx0387799034",
+        "phoneNumber": "593969444323",
+        "statusCode": 2,
+        "transactionStatus": "Canceled",
+        "authorizationCode": null,
+        "message": "No fue posible validar el pago, por favor vuelva a intentarlo con otros datos.",
+        "messageCode": 58,
+        "transactionId": 87656404,
+        "document": "1350754915",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "593969444323",
+        "optionalParameter2": "vanesagomezpalma@gmail.com",
+        "optionalParameter3": "+593969444323-vanesagomezpalma@gmail.com-",
+        "optionalParameter4": "JESUS MACIAS",
+        "storeName": "Gloria Santana",
+        "date": "2026-06-21T23:53:07.297",
+        "regionIso": "EC",
+        "transactionType": "Classic",
+        "recap": null,
+        "reference": "Pago de pedido tx0387799034 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-22T04:51:17.990Z"
+    },
+    {
+      "id": "tx0418555226",
+      "clientTxId": "tx0418555226",
+      "buyer": {
+        "name": "Juan Gomez",
+        "email": "juan@gmail.com",
+        "documentId": "1307115678",
+        "phoneNumber": "0969444323",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "lol"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 35,
+      "tax": 5.25,
+      "shipping": 5,
+      "total": 45.25,
+      "status": "Paid",
+      "payphoneTransactionId": "87656503",
+      "payphoneResponse": {
+        "email": "juan@gmail.com",
+        "cardType": "Credit",
+        "bin": "411111",
+        "lastDigits": "1111",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": "50",
+        "cardBrand": "Visa JP Morgan Chase Bank (US)",
+        "amount": 4525,
+        "clientTransactionId": "tx0418555226",
+        "phoneNumber": "593969444323",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87656503",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87656503,
+        "document": "1307115678",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "593969444323",
+        "optionalParameter2": "juan@gmail.com",
+        "optionalParameter3": "+593969444323-juan@gmail.com-",
+        "optionalParameter4": "JUAN GOMEZ",
+        "storeName": "Gloria Santana",
+        "date": "2026-06-22T00:00:37.043",
+        "regionIso": "EC",
+        "transactionType": "Classic",
+        "recap": null,
+        "reference": "Pago de pedido tx0418555226 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-22T04:56:25.552Z"
+    },
+    {
+      "id": "tx2736369881",
+      "clientTxId": "tx2736369881",
+      "buyer": {
+        "name": "VANESSA",
+        "email": "vane@gmail.com",
+        "documentId": "4556768733",
+        "phoneNumber": "0953567896",
+        "province": "8yhyh",
+        "city": "hyhy",
+        "address": "hyhyh"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 35,
+      "tax": 5.25,
+      "shipping": 5,
+      "total": 45.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-23T15:09:23.698Z"
+    },
+    {
+      "id": "tx2737270161",
+      "clientTxId": "tx2737270161",
+      "buyer": {
+        "name": "VANESSA",
+        "email": "vane@gmail.com",
+        "documentId": "4556768733",
+        "phoneNumber": "0953567896",
+        "province": "8yhyh",
+        "city": "hyhy",
+        "address": "hyhyh"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 35,
+      "tax": 5.25,
+      "shipping": 5,
+      "total": 45.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-23T15:09:32.701Z"
+    },
+    {
+      "id": "tx2738463990",
+      "clientTxId": "tx2738463990",
+      "buyer": {
+        "name": "VANESSA",
+        "email": "vane@gmail.com",
+        "documentId": "4556768733",
+        "phoneNumber": "0953567896",
+        "province": "8yhyh",
+        "city": "hyhy",
+        "address": "hyhyh"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 35,
+      "tax": 5.25,
+      "shipping": 5,
+      "total": 45.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-23T15:09:44.639Z"
+    },
+    {
+      "id": "tx2740111038",
+      "clientTxId": "tx2740111038",
+      "buyer": {
+        "name": "VANESSA",
+        "email": "vane@gmail.com",
+        "documentId": "4556768733",
+        "phoneNumber": "0953567898",
+        "province": "8yhyh",
+        "city": "hyhy",
+        "address": "hyhyh"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 35,
+      "tax": 5.25,
+      "shipping": 5,
+      "total": 45.25,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-23T15:10:01.111Z"
+    },
+    {
+      "id": "tx2744635088",
+      "clientTxId": "tx2744635088",
+      "buyer": {
+        "name": "VANESSA",
+        "email": "vane@gmail.com",
+        "documentId": "4556768733",
+        "phoneNumber": "0969444323",
+        "province": "manabi",
+        "city": "manta",
+        "address": "el palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 2,
+          "size": "M",
+          "subtotal": 70
+        }
+      ],
+      "subtotal": 70,
+      "tax": 10.5,
+      "shipping": 0,
+      "total": 80.5,
+      "status": "Paid",
+      "payphoneTransactionId": "87702749",
+      "payphoneResponse": {
+        "email": "vanessagomezpalma@gmail.com",
+        "cardType": "Test",
+        "bin": "777300",
+        "lastDigits": "8463",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": null,
+        "cardBrand": "PayPhone PayPhone",
+        "amount": 8050,
+        "clientTransactionId": "tx2744635088",
+        "phoneNumber": "593969444323",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87702749",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87702749,
+        "document": "1350754915",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "+593969444323",
+        "optionalParameter2": "vane@gmail.com",
+        "optionalParameter3": null,
+        "optionalParameter4": null,
+        "storeName": "Gloria Santana",
+        "date": "2026-06-23T10:12:31.497",
+        "regionIso": "EC",
+        "transactionType": "Store to Customer",
+        "recap": null,
+        "reference": "Pago de pedido tx2744635088 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-23T15:10:46.350Z"
+    },
+    {
+      "id": "tx3052994640",
+      "clientTxId": "tx3052994640",
+      "buyer": {
+        "name": "VANESSA",
+        "email": "vane@gmail.com",
+        "documentId": "1350754915",
+        "phoneNumber": "0969333456",
+        "province": "Manabi",
+        "city": "Manta",
+        "address": "El Palmar"
+      },
+      "items": [
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 35,
+      "tax": 5.25,
+      "shipping": 5,
+      "total": 45.25,
+      "status": "Paid",
+      "payphoneTransactionId": "87705436",
+      "payphoneResponse": {
+        "email": "vane@gmail.com",
+        "cardType": "Credit",
+        "bin": "411111",
+        "lastDigits": "1111",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": "50",
+        "cardBrand": "Visa JP Morgan Chase Bank (US)",
+        "amount": 4525,
+        "clientTransactionId": "tx3052994640",
+        "phoneNumber": "593969333456",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87705436",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87705436,
+        "document": "1350754915",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "593969333456",
+        "optionalParameter2": "vane@gmail.com",
+        "optionalParameter3": "+593969333456-vane@gmail.com-",
+        "optionalParameter4": "VANESSA PALMA",
+        "storeName": "Gloria Santana",
+        "date": "2026-06-23T11:03:55.49",
+        "regionIso": "EC",
+        "transactionType": "Classic",
+        "recap": null,
+        "reference": "Pago de pedido tx3052994640 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-23T16:02:09.946Z"
+    },
+    {
+      "id": "tx3352960189",
+      "clientTxId": "tx3352960189",
+      "buyer": {
+        "name": "Ramon Briones",
+        "email": "ramon@gmail.com",
+        "documentId": "1307116911",
+        "phoneNumber": "0969444534",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "Hola"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        }
+      ],
+      "subtotal": 45,
+      "tax": 6.75,
+      "shipping": 5,
+      "total": 56.75,
+      "status": "Paid",
+      "payphoneTransactionId": "87708691",
+      "payphoneResponse": {
+        "email": "ramon@gmail.com",
+        "cardType": "Credit",
+        "bin": "411111",
+        "lastDigits": "1111",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": "50",
+        "cardBrand": "Visa JP Morgan Chase Bank (US)",
+        "amount": 5675,
+        "clientTransactionId": "tx3352960189",
+        "phoneNumber": "593969444534",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87708691",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87708691,
+        "document": "1307116911",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "593969444534",
+        "optionalParameter2": "ramon@gmail.com",
+        "optionalParameter3": "+593969444534-ramon@gmail.com-",
+        "optionalParameter4": "RAMON BRIONES",
+        "storeName": "Gloria Santana",
+        "date": "2026-06-23T11:54:07.177",
+        "regionIso": "EC",
+        "transactionType": "Classic",
+        "recap": null,
+        "reference": "Pago de pedido tx3352960189 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-23T16:52:09.601Z"
+    },
+    {
+      "id": "tx3362284963",
+      "clientTxId": "tx3362284963",
+      "buyer": {
+        "name": "VANESSA",
+        "email": "vane@gmail.com",
+        "documentId": "1307116911",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "hola"
+      },
+      "items": [
+        {
+          "id": "prod-pants",
+          "name": "Pantalón Chino Slim Fit",
+          "price": 30,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 30
+        }
+      ],
+      "subtotal": 30,
+      "tax": 4.5,
+      "shipping": 5,
+      "total": 39.5,
+      "status": "Paid",
+      "payphoneTransactionId": "87708806",
+      "payphoneResponse": {
+        "email": "vanessagomezpalma@gmail.com",
+        "cardType": "Test",
+        "bin": "777300",
+        "lastDigits": "8463",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": null,
+        "cardBrand": "PayPhone PayPhone",
+        "amount": 3950,
+        "clientTransactionId": "tx3362284963",
+        "phoneNumber": "593969444323",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87708806",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87708806,
+        "document": "1350754915",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "+593969444323",
+        "optionalParameter2": "vane@gmail.com",
+        "optionalParameter3": null,
+        "optionalParameter4": null,
+        "storeName": "Gloria Santana",
+        "date": "2026-06-23T11:55:31.47",
+        "regionIso": "EC",
+        "transactionType": "Store to Customer",
+        "recap": null,
+        "reference": "Pago de pedido tx3362284963 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-23T16:53:42.849Z"
+    },
+    {
+      "id": "tx3403953642",
+      "clientTxId": "tx3403953642",
+      "buyer": {
+        "name": "Vaanessa Gomez",
+        "email": "vanesa@gmail.com",
+        "documentId": "1307116911",
+        "phoneNumber": "096944323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "HOLA"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        },
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 80,
+      "tax": 12,
+      "shipping": 0,
+      "total": 92,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-23T17:00:39.536Z"
+    },
+    {
+      "id": "tx3404342292",
+      "clientTxId": "tx3404342292",
+      "buyer": {
+        "name": "Vaanessa Gomez",
+        "email": "vanesa@gmail.com",
+        "documentId": "1307116911",
+        "phoneNumber": "096944323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "HOLA"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        },
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 80,
+      "tax": 12,
+      "shipping": 0,
+      "total": 92,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-23T17:00:43.422Z"
+    },
+    {
+      "id": "tx3404905185",
+      "clientTxId": "tx3404905185",
+      "buyer": {
+        "name": "Vaanessa Gomez",
+        "email": "vanesa@gmail.com",
+        "documentId": "1307116911",
+        "phoneNumber": "096944323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "HOLA"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        },
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 80,
+      "tax": 12,
+      "shipping": 0,
+      "total": 92,
+      "status": "Pending",
+      "payphoneTransactionId": null,
+      "payphoneResponse": null,
+      "createdAt": "2026-06-23T17:00:49.051Z"
+    },
+    {
+      "id": "tx3406112539",
+      "clientTxId": "tx3406112539",
+      "buyer": {
+        "name": "Vaanessa Gomez",
+        "email": "vanesa@gmail.com",
+        "documentId": "1307116911",
+        "phoneNumber": "0969444323",
+        "province": "Pichincha",
+        "city": "Quito",
+        "address": "HOLA"
+      },
+      "items": [
+        {
+          "id": "prod-bomber",
+          "name": "Chaqueta Bomber Vélours",
+          "price": 45,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 45
+        },
+        {
+          "id": "prod-hoodie",
+          "name": "Hoodie Minimalista Algodón",
+          "price": 35,
+          "quantity": 1,
+          "size": "M",
+          "subtotal": 35
+        }
+      ],
+      "subtotal": 80,
+      "tax": 12,
+      "shipping": 0,
+      "total": 92,
+      "status": "Paid",
+      "payphoneTransactionId": "87709372",
+      "payphoneResponse": {
+        "email": "vanesa@gmail.com",
+        "cardType": "Credit",
+        "bin": "411111",
+        "lastDigits": "1111",
+        "deferredCode": "00000000",
+        "deferredMessage": "0 Meses sin Intereses",
+        "deferred": false,
+        "cardBrandCode": "50",
+        "cardBrand": "Visa JP Morgan Chase Bank (US)",
+        "amount": 9200,
+        "clientTransactionId": "tx3406112539",
+        "phoneNumber": "593969444323",
+        "statusCode": 3,
+        "transactionStatus": "Approved",
+        "authorizationCode": "W87709372",
+        "message": null,
+        "messageCode": 0,
+        "transactionId": 87709372,
+        "document": "1307116911",
+        "taxes": [],
+        "currency": "USD",
+        "optionalParameter1": "593969444323",
+        "optionalParameter2": "vanesa@gmail.com",
+        "optionalParameter3": "+593969444323-vanesa@gmail.com-",
+        "optionalParameter4": "VANESSA GOMEZ",
+        "storeName": "Gloria Santana",
+        "date": "2026-06-23T12:02:44.86",
+        "regionIso": "EC",
+        "transactionType": "Classic",
+        "recap": null,
+        "reference": "Pago de pedido tx3406112539 en Velours Studio",
+        "pan": null
+      },
+      "createdAt": "2026-06-23T17:01:01.125Z"
+    }
+  ]
+}
